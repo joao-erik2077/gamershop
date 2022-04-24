@@ -1,12 +1,19 @@
+:root {
+    --main-color: #6b5b95;
+    --secondary-color: #a2b9bc;
+}
+
 body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 0;
     padding: 0;
     height: 100vh;
 }
 
 header {
-    background-color: #8b0ac7;
+    background-color: var(--main-color);
     height: 10vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,7 +21,57 @@ header {
 
 .shop-name {
     color: #ffffff;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 7vh;
     cursor: pointer;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.cards-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card {
+    background-color: var(--main-color);
+    height: 55vh;
+    width: 25vw;
+    border: 1px solid black;
+    border-radius: 5%;
+    margin: 1rem;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+}
+
+.card-img {
+    background-color: #ffffff;
+    margin-top: 2.5vh;
+    height: 20vw;
+    width: 20vw;
+}
+
+.card-name {
+    color: #ffffff;
+    font-size: 2rem;
+}
+
+.card-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.card-button {
+    text-align: center;
+    width: 25%;
+    margin-left: 3px;
+    cursor: pointer;
+    padding: 1vh 1vw;
+    background-color: var(--secondary-color);
+    transition: 0.3s;
 }
