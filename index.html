@@ -17,6 +17,7 @@
     </header>
 
     <main>
+        <div id="dark-curtain"></div>
         <div class="cards-list">
 
             <div class="card">
@@ -27,8 +28,8 @@
                     <h3 class="card-name">Stickman Refugge</h3>
                 </div>
                 <div class="card-button-container">
-                    <a class="card-button">Ver</a>
-                    <a class="card-button" id="accept-button-1">Carrinho</a>
+                    <a class="card-button" id="info-button-1">Ver</a>
+                    <a class="card-button" onclick="carrinho(this)">Carrinho</a>
                 </div>
             </div>
 
@@ -40,8 +41,8 @@
                     <h3 class="card-name">Agostinho Valley</h3>
                 </div>
                 <div class="card-button-container">
-                    <a class="card-button">Ver</a>
-                    <a class="card-button" id="accept-button-2">Carrinho</a>
+                    <a class="card-button" id="info-button-2">Ver</a>
+                    <a class="card-button" onclick="carrinho(this)">Carrinho</a>
                 </div>
             </div>
 
@@ -53,8 +54,8 @@
                     <h3 class="card-name">Stickman Refugge 2</h3>
                 </div>
                 <div class="card-button-container">
-                    <a class="card-button">Ver</a>
-                    <a class="card-button" id="accept-button-3">Carrinho</a>
+                    <a class="card-button" id="info-button-3">Ver</a>
+                    <a class="card-button" onclick="carrinho(this)">Carrinho</a>
                 </div>
             </div>
 
@@ -66,8 +67,8 @@
                     <h3 class="card-name">Atom Craft</h3>
                 </div>
                 <div class="card-button-container">
-                    <a class="card-button">Ver</a>
-                    <a class="card-button" id="accept-button-4">Carrinho</a>
+                    <a class="card-button" id="info-button-4">Ver</a>
+                    <a class="card-button" onclick="carrinho(this)">Carrinho</a>
                 </div>
             </div>
 
@@ -79,8 +80,8 @@
                     <h3 class="card-name">Duelo de Titãs</h3>
                 </div>
                 <div class="card-button-container">
-                    <a class="card-button">Ver</a>
-                    <a class="card-button" id="accept-button-5">Carrinho</a>
+                    <a class="card-button" id="info-button-5">Ver</a>
+                    <a class="card-button" onclick="carrinho(this)">Carrinho</a>
                 </div>
             </div>
 
@@ -92,13 +93,79 @@
                     <h3 class="card-name">Pedraria</h3>
                 </div>
                 <div class="card-button-container">
-                    <a class="card-button">Ver</a>
-                    <a class="card-button" id="accept-button-6">Carrinho</a>
+                    <a class="card-button" id="info-button-6">Ver</a>
+                    <a class="card-button" onclick="carrinho(this)">Carrinho</a>
                 </div>
             </div>
 
         </div>
     </main>
+
+
+    <div class="info" id="info-1">
+        <div>
+            <img class="info-img" src="img/stickman-refugge.jpeg">
+            <h1 class="info-title">Stickman Refugge</h1>
+            <div style="display: flex; justify-content: center;"><a class="info-button"
+                    onclick="carrinho(this)">Carrinho</a></div>
+        </div>
+        <p class="info-desc">Stickman Refugge é um jogo 2D onde o jogador controla um "homem-palito" com um único
+            objetivo: resgatar os seus amigos</p>
+    </div>
+
+    <div class="info" id="info-2">
+        <div>
+            <img class="info-img" src="img/AgostinhoValley.png">
+            <h1 class="info-title">Agostinho Valley</h1>
+            <div style="display: flex; justify-content: center;"><a class="info-button"
+                    onclick="carrinho(this)">Carrinho</a></div>
+        </div>
+        <p class="info-desc">Nesse relaxante jogo, cuide de sua fazenda ao mesmo tempo em que trabalha como taxista em
+            uma cidade calma do interior</p>
+    </div>
+
+    <div class="info" id="info-3">
+        <div>
+            <img class="info-img" src="img/stickman-refugge-2.jpeg">
+            <h1 class="info-title">Stickman Refugge 2</h1>
+            <div style="display: flex; justify-content: center;"><a class="info-button"
+                    onclick="carrinho(this)">Carrinho</a></div>
+        </div>
+        <p class="info-desc">Ele está de volta, e dessa vez não vai deixar ninguem escapar</p>
+    </div>
+
+    <div class="info" id="info-4">
+        <div>
+            <img class="info-img" src="img/atom-craft.jpeg">
+            <h1 class="info-title">Atom Craft</h1>
+            <div style="display: flex; justify-content: center;"><a class="info-button"
+                    onclick="carrinho(this)">Carrinho</a></div>
+        </div>
+        <p class="info-desc">Crie tudo desde os átomos. Desbrave sua criatividade ao mesmo tempo que enfrenta desafios
+            de proporções universais</p>
+    </div>
+
+    <div class="info" id="info-5">
+        <div>
+            <img class="info-img" src="img/BatalhaLendaria.png">
+            <h1 class="info-title">Duelo de Titãs</h1>
+            <div style="display: flex; justify-content: center;"><a class="info-button"
+                    onclick="carrinho(this)">Carrinho</a></div>
+        </div>
+        <p class="info-desc">Sempre teve dúvida de qual a melhor linguagem de programação? Pois descubra agora mesmo
+            enquanto desafia outras linguagens para o soco</p>
+    </div>
+
+    <div class="info" id="info-6">
+        <div>
+            <img class="info-img" src="img/pedraria.jpeg">
+            <h1 class="info-title">Pedraria</h1>
+            <div style="display: flex; justify-content: center;"><a class="info-button"
+                    onclick="carrinho(this)">Carrinho</a></div>
+        </div>
+        <p class="info-desc">Após ser colocado em um experimento forçado, você, um cientista renomado, deve recriar o
+            mundo através da pedra</p>
+    </div>
 
     <script src="js/index.js"></script>
 </body>
